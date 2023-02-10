@@ -34,6 +34,6 @@ public class StatisticController {
     @PostMapping("/hit")                         // метод добавления пользователя
     public ResponseEntity<Statistic> postStat(@RequestBody EndpointHit statistic) {
         log.info("Creating stat record {}", statistic);
-        return new ResponseEntity<>(statisticService.postStat(statistic), HttpStatus.OK);
+        return new ResponseEntity<>(statisticService.postStat(statistic), HttpStatus.CREATED);
     }
 }
