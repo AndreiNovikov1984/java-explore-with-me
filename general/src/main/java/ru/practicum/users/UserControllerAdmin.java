@@ -21,7 +21,7 @@ import java.util.Collection;
 @Slf4j
 @Validated
 public class UserControllerAdmin {
-    private final UserServiceImpl userService;
+    private final UserService userService;
     private final UserMapper userMapper;
 
     @GetMapping
