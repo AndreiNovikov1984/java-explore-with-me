@@ -209,7 +209,7 @@
 							"variable": [
 								{
 									"key": "userId",
-									"value": "1"
+									"value": "61"
 								}
 							]
 						}
@@ -230,7 +230,7 @@
 							"});\r",
 							"pm.test(\"Test create subscription\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.user.id).to.eql(1);\r",
+							"    pm.expect(jsonData.user.id).to.eql(63);\r",
 							"    pm.expect(jsonData.user.email).to.eql('ivan1@yandex.ru');\r",
 							"    pm.expect(jsonData.user.name).to.eql('Ivan1');\r",
 							"});"
@@ -256,11 +256,11 @@
 					"variable": [
 						{
 							"key": "userId",
-							"value": "2"
+							"value": "64"
 						},
 						{
 							"key": "subscribeToId",
-							"value": "1"
+							"value": "63"
 						}
 					]
 				}
@@ -299,11 +299,11 @@
 					"variable": [
 						{
 							"key": "userId",
-							"value": "2"
+							"value": "64"
 						},
 						{
 							"key": "subscribeToId",
-							"value": "1"
+							"value": "63"
 						}
 					]
 				}
@@ -342,11 +342,11 @@
 					"variable": [
 						{
 							"key": "userId",
-							"value": "2"
+							"value": "63"
 						},
 						{
 							"key": "subscribeToId",
-							"value": "3"
+							"value": "150"
 						}
 					]
 				}
@@ -365,7 +365,7 @@
 							"});\r",
 							"pm.test(\"Test create subscription\", function () {\r",
 							"    var jsonData = pm.response.json();\r",
-							"    pm.expect(jsonData.user.id).to.eql(2);\r",
+							"    pm.expect(jsonData.user.id).to.eql(64);\r",
 							"    pm.expect(jsonData.user.email).to.eql('explorewithme1202@gmail.com');\r",
 							"    pm.expect(jsonData.user.name).to.eql('Ivan2');\r",
 							"});"
@@ -391,11 +391,11 @@
 					"variable": [
 						{
 							"key": "userId",
-							"value": "1"
+							"value": "63"
 						},
 						{
 							"key": "subscribeToId",
-							"value": "2"
+							"value": "64"
 						}
 					]
 				}
@@ -434,11 +434,11 @@
 					"variable": [
 						{
 							"key": "userId",
-							"value": "1"
+							"value": "63"
 						},
 						{
 							"key": "subscribeToId",
-							"value": "2"
+							"value": "64"
 						}
 					]
 				}
@@ -485,7 +485,7 @@
 					"variable": [
 						{
 							"key": "eventId",
-							"value": "1"
+							"value": "38"
 						}
 					]
 				}
