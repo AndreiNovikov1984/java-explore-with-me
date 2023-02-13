@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 import ru.practicum.category.CategoryService;
+import ru.practicum.email.EmailService;
 import ru.practicum.event.dto.NewEventDto;
 import ru.practicum.event.dto.UpdateEventAdminRequest;
 import ru.practicum.event.dto.UpdateEventUserRequest;
@@ -29,6 +30,7 @@ public class EventServiceImpl implements EventService {
     private final EventMapper eventMapper;
     private final UserService userService;
     private final CategoryService categoryService;
+    private final EmailService emailService;
 
     public Page<Event> getEventsAdm(Long[] users, TypeState[] states, Long[] categories, String rangeStart, String rangeEnd,
                                     Integer from, Integer size) {
@@ -50,6 +52,7 @@ public class EventServiceImpl implements EventService {
         switch (updateEventAdminRequest.getStateAction()) {
             case PUBLISH_EVENT:
                 event.setState(TypeState.PUBLISHED);
+                emailService.sendEmail(event);
                 break;
             case REJECT_EVENT:
                 event.setState(TypeState.CANCELED);
@@ -156,4 +159,5 @@ public class EventServiceImpl implements EventService {
     public void updateEvent(Event eventUpdate) {
         eventRepository.save(eventUpdate);
     }
+
 }

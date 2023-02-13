@@ -7,6 +7,7 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
+import ru.practicum.subscriptions.SubscriptionsRepository;
 import ru.practicum.users.dto.NewUserRequest;
 import ru.practicum.users.model.User;
 
@@ -17,6 +18,7 @@ import java.util.Optional;
 public class UserServiceImpl implements UserService {
     private final UserRepository userRepository;
     private final UserMapper userMapper;
+    private final SubscriptionsRepository subscriptionsRepository;
 
     public Page<User> getUsers(Long[] ids, Integer from, Integer size) {
         Pageable page = PageRequest.of((from / size), size);
@@ -46,5 +48,6 @@ public class UserServiceImpl implements UserService {
         } catch (Exception exception) {
             throw new ResponseStatusException(HttpStatus.CONFLICT, "This user isn't empty");
         }
-    }
+        subscriptionsRepository.deleteByUserId(userId);
+        subscriptionsRepository.deleteBySubscriberId(userId);    }
 }
