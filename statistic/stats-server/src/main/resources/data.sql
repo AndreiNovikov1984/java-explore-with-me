@@ -1,0 +1,32 @@
+SELECT *
+From STATISTIC;
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App1', 'uri1', 'ip1', '2022-12-24 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App2', 'uri2', 'ip1', '2022-12-25 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App3', 'uri1', 'ip1', '2022-12-26 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App4', 'uri1', 'ip1', '2022-12-27 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App5', 'uri1', 'ip1', '2022-12-28 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App1', 'uri1', 'ip1', '2022-12-24 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App2', 'uri2', 'ip1', '2022-12-25 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App3', 'uri1', 'ip1', '2022-12-26 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App4', 'uri1', 'ip1', '2022-12-27 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App5', 'uri1', 'ip1', '2022-12-28 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App1', 'uri1', 'ip1', '2022-12-24 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App2', 'uri2', 'ip1', '2022-12-25 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App3', 'uri1', 'ip1', '2022-12-26 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App4', 'uri1', 'ip1', '2022-12-27 19:04:08');
+-- INSERT into STATISTIC(APP, URI, IP, TIMESTAMP)
+-- values ('App5', 'uri1', 'ip1', '2022-12-28 19:04:08');
